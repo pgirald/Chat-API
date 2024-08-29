@@ -1,4 +1,4 @@
-type Role = {
+export type Role = {
 	name: string;
 	defaults: boolean;
 	broadcast: boolean;
@@ -6,7 +6,7 @@ type Role = {
 	userPrivileges: boolean;
 };
 
-type Contact = {
+export type Contact = {
 	username: string;
 	email: string;
 	countryCode: string;
@@ -21,13 +21,13 @@ type Contact = {
 	role: Role;
 };
 
-type Message = {
+export type Message = {
 	content: string;
 	receptionTime: Date;
 	attachments: string[];
 };
 
-type Chat = {
+export type Chat = {
 	subs: Contact[];
-    messages: Message[]
+	messages: Message[];
 };
