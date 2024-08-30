@@ -4,7 +4,7 @@
   "description": "Interface used by the client and the server for consistent communication.",
   "type": "module",
   "main": "index.ts",
-  "devDependencies": {
+  "dependencies": {
     "typescript": "^5.5.4",
     "ts-jest": "^29.2.3",
     "jest": "^29.7.0",
