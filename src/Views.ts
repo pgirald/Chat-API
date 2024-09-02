@@ -18,7 +18,8 @@ export type Contact = {
 	muted: boolean;
 	blocked: boolean;
 	picture?: string;
-	role: Role;
+	role?: Role;
+	img?: string;
 };
 
 export type Message = {
@@ -29,5 +30,9 @@ export type Message = {
 
 export type Chat = {
 	subs: Contact[];
+	owner: Contact;
 	messages: Message[];
+	name: string;
+	img?: string;
+	ringtone?: string;
 };
