@@ -25,7 +25,7 @@ export type Contact = {
 export type Message = {
 	content: string;
 	receptionTime: Date;
-	attachments: string[];
+	attachments: Attachment[];
 };
 
 export type Chat = {
@@ -38,6 +38,11 @@ export type Chat = {
 };
 
 export type Ringtone = {
+	name: string;
+	url: string;
+};
+
+export type Attachment = {
 	name: string;
 	url: string;
 };
