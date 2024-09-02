@@ -34,5 +34,10 @@ export type Chat = {
 	messages: Message[];
 	name: string;
 	img?: string;
-	ringtone?: string;
+	ringtone?: Ringtone;
+};
+
+export type Ringtone = {
+	name: string;
+	url: string;
 };
