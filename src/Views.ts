@@ -9,8 +9,7 @@ export type Role = {
 export type Contact = {
 	username: string;
 	email: string;
-	countryCode: string;
-	phone: string;
+	phoneNumber: string;
 	firstName: string;
 	lastName: string;
 	get fullName(): string;
