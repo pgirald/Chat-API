@@ -12,7 +12,7 @@ export type Contact = {
 	phoneNumber: string;
 	firstName: string;
 	lastName: string;
-	get fullName(): string;
+	//get fullName(): string;
 	aboutMe?: string;
 	muted: boolean;
 	blocked: boolean;
