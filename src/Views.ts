@@ -9,14 +9,13 @@ export type Role = {
 export type Contact = {
 	username: string;
 	email: string;
-	phoneNumber: string;
+	phoneNumber?: string;
 	firstName: string;
 	lastName: string;
 	//get fullName(): string;
 	aboutMe?: string;
 	muted: boolean;
 	blocked: boolean;
-	picture?: string;
 	role?: Role;
 	img?: string;
 };
