@@ -42,7 +42,7 @@ export type Chat = {
 	subs: Contact[];
 	owner: Contact;
 	messages: Message[];
-	name: string;
+	name?: string;
 	img?: string;
 	ringtone?: Ringtone;
 };
