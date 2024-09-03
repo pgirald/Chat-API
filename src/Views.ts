@@ -6,7 +6,19 @@ export type Role = {
 	userPrivileges: boolean;
 };
 
-export type Contact = {
+export type User = {
+	username: string;
+	email: string;
+	phoneNumber?: string;
+	firstName: string;
+	lastName: string;
+	//get fullName(): string;
+	aboutMe?: string;
+	role?: Role;
+	img?: string;
+};
+
+export type Contact = User & {
 	username: string;
 	email: string;
 	phoneNumber?: string;
