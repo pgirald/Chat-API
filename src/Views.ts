@@ -7,6 +7,7 @@ export type Role = {
 };
 
 export type User = {
+	id: number;
 	username: string;
 	email: string;
 	phoneNumber?: string;
@@ -19,26 +20,19 @@ export type User = {
 };
 
 export type Contact = User & {
-	username: string;
-	email: string;
-	phoneNumber?: string;
-	firstName: string;
-	lastName: string;
-	//get fullName(): string;
-	aboutMe?: string;
 	muted: boolean;
 	blocked: boolean;
-	role?: Role;
-	img?: string;
 };
 
 export type Message = {
+	id: number;
 	content: string;
 	receptionTime: Date;
 	attachments: Attachment[];
 };
 
 export type Chat = {
+	id: number;
 	subs: Contact[];
 	owner: Contact;
 	messages: Message[];
