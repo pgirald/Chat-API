@@ -1,4 +1,5 @@
 export type Role = {
+	id: number;
 	name: string;
 	defaults: boolean;
 	broadcast: boolean;
@@ -26,6 +27,7 @@ export type Contact = User & {
 
 export type Message = {
 	id: number;
+	sender: Contact;
 	content: string;
 	receptionTime: Date;
 	attachments: Attachment[];
@@ -42,6 +44,7 @@ export type Chat = {
 };
 
 export type Ringtone = {
+	id: number;
 	name: string;
 	url: string;
 };
@@ -49,4 +52,14 @@ export type Ringtone = {
 export type Attachment = {
 	name: string;
 	url: string;
+};
+
+export type Settings = {
+	enableNotifications: boolean;
+	seenStatus: boolean;
+	showOnlineStatus: boolean;
+	discoverability: boolean;
+	chatApproval: boolean;
+	notificationTone?: Ringtone;
+	groupsTone?: Ringtone;
 };
