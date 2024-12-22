@@ -1,6 +1,4 @@
-export type Role = {
-	id: number;
-	name: string;
+export type Privileges = {
 	defaults: boolean;
 	broadcast: boolean;
 	userDeletionBan: boolean;
@@ -16,7 +14,7 @@ export type User = {
 	lastName: string;
 	//get fullName(): string;
 	aboutMe?: string;
-	role?: Role;
+	permissions?: Privileges;
 	img?: string;
 };
 
